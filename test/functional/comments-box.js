@@ -15,16 +15,16 @@ describe('User visits home page', () => {
     browser.assert.text('title', 'Agile Box');
   });
 
-  describe('posts comment', () => {
-    before((done) => {
-      browser
-        .fill('author', 'Me')
-        .fill('body', 'Hey, yo!')
-        .pressButton('Post', done);
-    });
-
-    it('should see the comment', function() {
-      browser.assert.text('.comment', 'Hey, yo!');
-    });
-  });
+//  describe('posts comment', () => {
+//    before((done) => {
+//      browser
+//        .fill('author', 'Me')
+//        .fill('body', 'Hey, yo!')
+//        .pressButton('Post', done);
+//    });
+//
+//    it('should see the comment', function() {
+//      browser.assert.text('.comment', 'Hey, yo!');
+//    });
+//  });
 });
